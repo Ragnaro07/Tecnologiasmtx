@@ -1,0 +1,315 @@
+* {
+    padding: 0; 
+    margin: 0;
+}
+body {
+    font-family: 'Palanquin', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.logo, .logo img{ 
+    width: 12vw;
+    height: auto;
+    opacity: 90%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+.menuNavegacion .close {
+    color:rgba(65, 62, 124, 0.129)
+}
+
+.menuNavegacion ul{
+    float: right;
+    margin-right: 100px;
+}
+
+.menuNavegacion ul li{
+    display: inline-block;
+    margin: 38px 15px;
+}
+.menuNavegacion ul li a{
+    font-size: 18px;
+    padding: 8px 6px;
+    text-decoration: none;
+    color: rgb(15, 14, 63);
+}
+
+.menuNavegacion ul li a:hover{
+    color: #F7961E;
+}
+
+.menuNavegacion{
+    width: auto;
+    height: 10vh;
+    background: linear-gradient(to bottom, rgba(8, 2, 34, 0.952), rgb(229, 229, 237)33%, rgb(14, 9, 73)90%)
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url('img/Portada2.jpg') no-repeat center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.banner .texto_banner{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    min-width: 100%;
+    min-height: 30%;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .texto_banner p,
+.banner .texto_banner h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.banner .texto_banner h1{
+    font-size: 78px;
+}
+
+.banner .texto_banner p{
+    font-size: 38px;
+}
+
+.titulosm {
+    margin: 3%;
+    text-align: left;
+}
+
+.contenedorSM {
+    padding: 10px 130px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.contenedorAMR {
+    padding: 10px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.subtituloAmr{
+    color: #229191;
+}
+
+.n-medicionAmr{
+    color: #229191;
+}
+
+.contenedorAMI {
+    padding: 10px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.subtituloAmi{
+    color: #229191;
+}
+
+.n-medicionAmi{
+    color: #229191;
+}
+
+.contenedorlorawan{
+    padding: 10px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+    border: solid thin rgb(0, 38, 128); 
+}
+
+.subtitulolora{
+    color: #00ADB5;
+}
+
+h2 {
+    color: #00ADB5;
+}
+
+h3 {
+    color: #00ADB5;
+}
+
+.contenedorplataforma {
+    padding: 250px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+    background: url('img/plataforma.jpg') no-repeat center/cover;
+    color: #F7961E;
+}
+
+.contenedorsimu{
+    padding: 10px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+    border: solid thin rgb(0, 38, 128); 
+}
+
+.contenedor-producto{
+    padding: 10px 50px;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.gallery {
+    background-color: #f2f2f2;  
+}
+  
+.contenedor-galeria {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+}
+
+.subtitulo1{
+    padding: 10px 50px;
+    margin: 10px 20px;
+    color: #229191;
+}
+  
+.img-galeria {
+      width: 28%;
+      display: block;
+      margin-top: 25px;
+      box-shadow: 0 0 6px rgba(0, 0, 0,0.5);
+      cursor: pointer;
+      object-fit: contain;
+}
+  
+.image-light {
+      position: fixed;
+      background-color: rgba(0, 0, 0,0.6);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform .2s ease-in-out;
+      transform: translate(100%);
+}
+  
+.agregar-imagen {
+      object-fit: cover;
+      width: 60%;
+      border-radius: 10px;
+      transform: scale(0);
+      transition: transform .3s .2s;
+}
+  
+.close1 {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      width: 40px;
+      cursor: pointer;
+}
+  
+.showImage {
+      transform: scale(1);
+} 
+  
+.show {
+      transform: translate(0);
+}
+
+
+
+@media(max-width: 1000px){
+    .hamburger{
+        width: 30px;
+        position: absolute;
+        top: 30px;
+        transform: translateY(-50%);
+    }
+
+    .hamburger span{
+        margin-bottom: 3px;
+        background-color: rgb(23, 7, 94);
+        display: block;
+        height: 3px;
+    }
+
+    .menuNavegacion .hamburger :hover{
+        color: #F7961E;
+    }
+
+    .hamburger span{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .logo, .logo img{
+        margin-left: 500px;
+        width: 200px;
+    }
+
+    .menuNavegacion{
+        position: relative;
+    }
+
+    nav ul{
+        float: none;
+        width: 250px;
+        padding: 0;
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        background-color: rgb(212, 216, 217);
+        margin: 0px;
+        padding-top: 40px;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+    }
+   
+    .open{
+        left: 0;
+    }
+
+    .menuNavegacion ul li{
+        display: block;
+        float: none;
+    }
+
+    .menuNavegacion ul li a{
+        font-size: 18px;
+        padding: 10px 40px;  
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        top: 15px;
+        color: rgb(36, 22, 19);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menuNavegacion ul li span:hover{
+        color: #F7961E;
+    }
+
+}

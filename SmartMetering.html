@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@200;400;600&family=Play:wght@700&display=swap" rel="stylesheet">
+    <title>LPWAN - Metrex</title>
+</head>
+<body>
+    <nav class="menuNavegacion">
+            <div class="hamburger" onclick="mostrar()">
+                <span></span><span></span><span></span>
+            </div>
+            <div>
+                <img src="img/logo.gif" alt="logo empresa" class="logo">
+                <ul id="sliding_menu">
+                    <li><span class="close" onclick="ocultar()">X</span></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="SmartMetering.html">SmartMetering</a></li>
+                    <li><a href="TecnologiasIot.html">Tecnologías IoT</a></li>
+                    <li><a href="Catalogo.html">Galeria</a></li>
+                    <li><a href="Plataforma.html">Plataforma</a></li>
+                    <li><a href="Simulador.html">Simulador</a></li>
+                </ul>
+            </div>
+    </nav> 
+    <header>
+        <div class="contenedorSM">
+            <H1>Smart Metering</H1>
+            <h2>Medición inteligente en Metrex</h2>
+        </div>
+    </header>   
+    <main>
+        <section class="contenedorAMR" id="medicionAMR">  
+            <h2 class="subtituloAmr">(AMR) Automated Meter Reading</h2>
+                <div class="definicionamr"><br>
+                    <p>La tecnología de lectura automática de medidores se utiliza para recopilar datos de consumo de gas de manera remota y automatizada, en lugar de requerir que alguien visite básicamente el medidor para registrar los datos manualmente. Esto se logra mediante la instalación de dispositivos de comunicación en los medidores de gas que envían la información a un sistema central. La implementación de AMR puede ser beneficiosa para las compañías de servicios públicos y los usuarios, ya que reduce los costos operativos, minimiza los errores de lectura y brinda la capacidad de monitorear el consumo en tiempo real.</p>
+                </div>
+                <div class="medicionAmr">
+                    <h3 class="n-medicionAmr"><br>Esta compuesta por</h3><br>
+                        <li>Red-on line</li>
+                        <li>Modulo de comunicación</li>
+                        <li>Almacenamiento de información en la nube</li>
+                        <li>Plataforma para gestión de los datos</li>
+                        <li>Comunicación unidireccional</li><br>
+                </div>
+                <div class="medicionAmr">
+                    <h3 class="n-medicionAmr"><br> Protocolo de         comunicación IoT aplicado</h3><br>
+                        <li>Sigfox</li>
+                        <li>LoRaWAN</li>
+                        <li>Cat-M1</li><br>
+                </div>
+                <div class="medicionAmr">
+                    <h3 class="n-medicionAmr"><br>Beneficios</h3><br>
+                        <li>Pasa de recolectar de manera manual, un dato mensual a recolectar 60 datos de manera automatica al mes. </li>
+                        <li>Facilita y focaliza la planeación de visitas en campo a travas de los reportes de comportamiento de consumos en plataforma</li><br>
+                </div>
+        </section>
+        <section class="contenedorAMI" id="medicionAMI">        
+                <div class="medicionAmi">
+                    <h2 class="subtituloAmi">(AMI) Advanced Metering Infraestructure </h2>
+                    <p>.</p><br>
+                </div>
+                <div class="medicionAmi">
+                    <h3 class="n-medicionAmi"><br>Esta compuesta por</h3><br>
+                        <li>Red-on line</li>
+                        <li>Modulo de comunicación</li>
+                        <li>Almacenamiento de información en la nube</li>
+                        <li>Plataforma para gestión de los datos</li>
+                        <li>Comunicación bidireccional</li>
+                </div>
+                <div class="medicionAmi">
+                    <h3 class="n-medicionAmi"><br>Protocolo de comunicación IoT aplicado</h3><br>
+                         <li>Sigfox</li>
+                         <li>LoRaWAN</li>
+                         <li>Cat-M1</li>
+                </div>
+                <div class="medicionAmi">
+                    <h3 class="n-medicionAmi"><br>Beneficios</h3><br>
+                         <li>Pasa de recolectar de manera manual, un dato mensual a recolectar 60 datos de manera automatica al mes. </li>
+                         <li>Facilita y focaliza la planeación de visitas en campo a travas de los reportes de comportamiento de consumos en plataforma</li>
+                </div>
+        </section>
+    </main>
+    <script src="Javascript/menu.js"></script>
+</body>
+</html>
